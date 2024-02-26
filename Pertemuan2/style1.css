@@ -1,0 +1,68 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("img/background2.jpg");
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    width: 1000px;
+    margin: 50px auto;
+    background: url("img/background.jpg");
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    grid-template-columns: 150px 1fr;
+    height: 500px;
+    overflow: hidden;
+}
+
+aside {
+    padding: 20px;
+}
+
+.sidebar-satu{
+    margin-right: 10px;
+}
+
+aside:first-of-type {
+    order: -1;
+}
+
+aside h3 {
+    margin: 0;
+}
+
+aside li {
+    margin-bottom: 5px;
+}
+
+.kolom-utama h2 {
+    margin: 10 10 10px;
+}
+
+.kolom-utama p {
+    margin: 0;
+}
+
+.sidebar-dua {
+    height: 100%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar-dua h3 {
+    margin: 0;
+}
+
+.sidebar-dua p {
+    margin: 5;
+}
