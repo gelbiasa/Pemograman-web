@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Praktikum 8 Menambah dan menghapus konten dari elemen HTML Langkah 2-->
+<html>
+
+<head>
+    <!-- Mengimpor stylesheet eksternal -->
+    <link rel="stylesheet" type="text/css" href="styleTable.css" />
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Menambahkan baris baru saat tombol "Add Row" ditekan
+            $(".add-row").click(function () {
+                // Mengambil nilai dari input nama dan email
+                var name = $("#name").val();
+                var email = $("#email").val();
+                // Membuat markup HTML untuk baris tabel baru
+                var markup = "<tr><td><input type='checkbox' name='record'></td><td>"
+                    + name + "</td><td>" + email + "</td></tr>";
+                // Menambahkan markup ke dalam tbody tabel
+                $("table tbody").append(markup);
+            });
+
+            // Menghapus baris yang dicentang saat tombol "Delete Row" ditekan
+            $(".delete-row").click(function () {
+                // Menggunakan selector untuk mencari input checkbox yang dicentang di dalam tbody
+                $("table tbody").find('input[name="record"]').each(function () {
+                    // Jika input checkbox dicentang, hapus barisnya
+                    if ($(this).is(":checked")) {
+                        $(this).parents("tr").remove();
+                    }
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Form untuk input nama dan email -->
+    <form>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="email" placeholder="Email Address">
+        <input type="button" class="add-row" value="Add Row">
+    </form>
+    <!-- Tabel untuk menampilkan data -->
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Baris tabel awal -->
+            <tr>
+                <td><input type="checkbox" name="record"></td>
+                <td>M. Isroqi Gelby Firmansyah</td>
+                <td>gelby@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Tombol untuk menghapus baris -->
+    <button type="button" class="delete-row">Delete Row</button>
+</body>
+
+</html>
