@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Praktikum 8 JQuery DOM Manipulation Langkah 1 -->
+<html>
+
+<head>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Menambahkan event listener untuk klik pada tombol dengan ID 'btn1'
+            $("#btn1").click(function () {
+                // Menampilkan teks dari elemen dengan ID 'test1' menggunakan alert
+                alert($("#test1").text());
+            });
+
+            // Menambahkan event listener untuk klik pada tombol dengan ID 'btn2'
+            $("#btn2").click(function () {
+                // Menampilkan HTML dari elemen dengan ID 'test2' menggunakan alert
+                alert($("#test2").html());
+            });
+
+            // Menambahkan event listener untuk klik pada tombol dengan ID 'btn3'
+            $("#btn3").click(function () {
+                // Menampilkan nilai dari input dengan ID 'test3' menggunakan alert
+                alert($("#test3").val());
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Elemen paragraf dengan ID 'test1' -->
+    <p id="test1">This is the first paragraph.</p>
+    <!-- Elemen paragraf dengan ID 'test2' -->
+    <p id="test2">This is <b>another</b> paragraph.</p>
+    <!-- Input teks dengan ID 'test3' -->
+    <p>Your Name: <input type="text" id="test3"></p>
+
+    <!-- Tombol untuk mendapatkan teks -->
+    <button id="btn1">Get Text</button>
+    <!-- Tombol untuk mendapatkan HTML -->
+    <button id="btn2">Get HTML</button>
+    <!-- Tombol untuk mendapatkan nilai input -->
+    <button id="btn3">Get Value</button>
+</body>
+
+</html>
