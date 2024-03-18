@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Selector langkah 1 -->
+<html>
+
+<head>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Menambahkan event listener untuk klik pada elemen 'button'
+            $("button").click(function () {
+                // Menyembunyikan elemen-elemen dengan tag 'h2'
+                $("h2").hide();
+                // Menyembunyikan elemen-elemen dengan kelas 'subjudul'
+                $(".subjudul").hide();
+                // Menyembunyikan elemen dengan id 'paragraf'
+                $("#paragraf").hide();
+                // Menyembunyikan elemen dengan id 'paragraf' dan kelas 'dua'
+                $("#paragraf.dua").hide();
+                // Menyembunyikan elemen-elemen <p> yang merupakan turunan dari elemen <div> dengan kelas 'paragraf'
+                $("div p.paragraf").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Elemen-elemen HTML yang akan dimanipulasi -->
+    <h2> Ini adalah Judul Bab</h2>
+    <h3 class="subjudul"> Ini adalah Sub Judul Bab</h3>
+    <p id="paragraf"> Ini adalah paragraf pertama </p>
+    <p id="paragraf" class="dua"> Ini adalah paragraf kedua </p>
+    <div>
+        <p class="paragraf">
+            Ini adalah paragraf ketiga
+        </p>
+    </div>
+    <p> Ini paragraf yang akan tetap ditampilkan</p>
+    <!-- Tombol untuk memicu fungsi penghapusan elemen -->
+    <button> Klik Saya! </button>
+</body>
+
+</html>
