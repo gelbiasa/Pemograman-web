@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Praktikum bagian 7 Animasi-->
+<html>
+
+<head>
+    <!-- Mengimpor stylesheet eksternal -->
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css" />
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Menambahkan event listener untuk klik pada semua tombol
+            $("button").click(function () {
+                // Menganimasikan perubahan posisi elemen div ke arah kiri sejauh 300px
+                $("div").animate({ left: 300 });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Tombol untuk memicu animasi -->
+    <button type="button">Start Animation</button>
+    <!-- Elemen div yang akan dianimasikan -->
+    <div class="box"></div>
+</body>
+
+</html>
