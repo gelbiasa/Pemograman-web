@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Praktikum 11 JQuery UI Plugin DatePicker Langkah 1 -->
+<html>
+
+<head>
+    <!-- Mengimpor stylesheet jQuery UI -->
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+
+    <!-- Mengimpor jQuery inti -->
+    <script src="jquery-3.7.1.js"></script>
+
+    <!-- Mengimpor jQuery UI -->
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+
+    <!-- Skrip JavaScript untuk mengaktifkan datepicker -->
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(function () {
+            // Mengaktifkan datepicker pada elemen dengan ID 'date_ex'
+            $("#date_ex").datepicker();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Kontainer untuk input datepicker -->
+    <div>Selected Date: <input type="text" id="date_ex"></div>
+</body>
+
+</html>
