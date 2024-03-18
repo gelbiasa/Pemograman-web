@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!-- Praktikum 12 JQuery AJAX Langkah 4 -->
+<head>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Saat dokumen siap, tambahkan event listener untuk tombol
+            $("button").click(function () {
+                // Ketika tombol diklik, muat konten dari test-content.html ke dalam elemen dengan id "box"
+                $("#box").load("test-content.html");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Elemen untuk menampilkan konten yang dimuat -->
+    <div id="box">
+        <!-- Placeholder teks jika konten belum dimuat -->
+        <h2>Klik tombol dibawah untuk menampilkan konten</h2>
+    </div>
+    <!-- Tombol yang akan memicu muatan konten saat diklik -->
+    <button type="button">Klik Saya !</button>
+</body>
+
+</html>
