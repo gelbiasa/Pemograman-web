@@ -1,0 +1,32 @@
+/* Praktikum 8 Menambah dan menghapus konten dari elemen HTML Langkah 2 */
+/* Gaya untuk elemen 'form' */
+form {
+    margin: 20px 0; /* Memberikan margin 20px pada bagian atas dan bawah form */
+}
+
+/* Gaya untuk input dalam form dan tombol */
+form input,
+button {
+    padding: 5px; /* Memberikan padding 5px pada input dan tombol dalam form */
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%; /* Menentukan lebar tabel menjadi 100% dari lebar kontainer */
+    margin-bottom: 20px; /* Memberikan margin 20px pada bagian bawah tabel */
+    border-collapse: collapse; /* Menggabungkan border sel dalam tabel */
+}
+
+/* Gaya untuk tabel, sel header, dan sel data */
+table,
+th,
+td {
+    border: 1px solid #cdcded; /* Mengatur border seluruh tabel, sel header, dan sel data */
+}
+
+/* Gaya untuk sel header dan sel data dalam tabel */
+table th,
+table td {
+    padding: 10px; /* Memberikan padding 10px pada sel header dan sel data dalam tabel */
+    text-align: left; /* Menyelaraskan teks ke kiri dalam sel header dan sel data */
+}
