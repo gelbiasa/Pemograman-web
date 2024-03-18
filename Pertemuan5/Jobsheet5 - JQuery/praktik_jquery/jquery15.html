@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Praktikum 11 JQuery UI Plugin According Langkah 1 -->
+<html>
+
+<head>
+    <!-- Mengimpor stylesheet jQuery UI -->
+    <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css">
+
+    <!-- Mengimpor jQuery inti -->
+    <script src="jquery-3.7.1.js"></script>
+
+    <!-- Mengimpor jQuery UI -->
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+
+    <!-- Skrip JavaScript untuk mengaktifkan accordion -->
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(function () {
+            // Mengaktifkan accordion pada elemen dengan ID 'jQuery_accordion'
+            $("#jQuery_accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Kontainer untuk accordion -->
+    <div id="jQuery_accordion">
+        <!-- Bagian 1 -->
+        <h3>header 1</h3>
+        <p> This is section 1.
+            Place your content here in paragraphs or use div elements etc. </p>
+        
+        <!-- Bagian 2 -->
+        <h3>header 2</h3>
+        <p> This is section 2. You can also include images like this:
+            <br> <img src="img/gambar4.jpg" />
+        </p>
+        
+        <!-- Bagian 3 -->
+        <h3>header 3</h3>
+        <div>
+            <p>This is section 3. Content can include listing as well.
+                <ol>
+                    <li>item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
