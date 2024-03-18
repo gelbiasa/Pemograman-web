@@ -1,0 +1,14 @@
+/* Gaya umum untuk elemen dengan ID 'kotak2' dan 'flip' */
+#kotak2,
+#flip {
+    padding: 5px; /* Menambahkan padding sebesar 5px */
+    text-align: center; /* Pusatkan teks */
+    background-color: #a7dbd8; /* Warna latar belakang */
+    border: solid 2px #e0e4cc; /* Gaya border solid dengan ketebalan 2px */
+    border-radius: 5px; /* Memiliki border-radius 5px untuk membuat sudut elemen menjadi melengkung */
+}
+
+/* Gaya khusus untuk elemen dengan ID 'kotak2' */
+#kotak2 {
+    padding: 50px; /* Menambahkan padding sebesar 50px */
+}
