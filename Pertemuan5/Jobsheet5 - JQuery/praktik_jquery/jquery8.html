@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Praktikum 8 Animasi Method chaining-->
+<html>
+
+<head>
+    <!-- Mengimpor stylesheet eksternal -->
+    <link rel="stylesheet" type="text/css" href="styleAnimate.css" />
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Menambahkan event listener untuk klik pada semua tombol
+            $("button").click(function () {
+                // Memulai animasi pada elemen dengan kelas 'box'
+                $(".box")
+                    // Animasi untuk mengubah lebar elemen menjadi 300px
+                    .animate({ width: "300px" })
+                    // Animasi untuk mengubah tinggi elemen menjadi 300px
+                    .animate({ height: "300px" })
+                    // Animasi untuk mengubah jarak kiri elemen menjadi 150px
+                    .animate({ marginLeft: "150px" })
+                    // Animasi untuk mengubah ketebalan border menjadi 10px
+                    .animate({ borderWidth: "10px" })
+                    // Animasi untuk mengubah opacity elemen menjadi 0.5
+                    .animate({ opacity: 0.5 });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Tombol untuk memicu animasi -->
+    <button type="button">Start Animation</button>
+    <!-- Elemen div yang akan dianimasikan -->
+    <div class="box"></div>
+</body>
+
+</html>
