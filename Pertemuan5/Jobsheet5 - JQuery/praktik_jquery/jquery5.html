@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Praktikum Bagian 6 Effect Slide -->
 <html>
 
 <head>
@@ -12,8 +11,8 @@
         $(document).ready(function () {
             // Ketika elemen dengan ID 'flip' diklik
             $("#flip").click(function () {
-                // Menganimasikan slide up pada elemen dengan ID 'kotak2' dengan kecepatan 'slow'
-                $("#kotak2").slideUp("slow");
+                // Menganimasikan slide down pada elemen dengan ID 'kotak2' dengan kecepatan 'slow'
+                $("#kotak2").slideDown("slow");
             });
         });
 
@@ -24,7 +23,6 @@
     <!-- Elemen untuk memicu efek slide -->
     <div id="flip">Klik untuk Efek Slide</div>
     <!-- Elemen yang akan mengalami efek slide -->
-    <div id="kotak2">Selamat Pagi</div>
-</body>
+    <div id="kotak2" style="display:none;">Selamat Pagi</div> 
 
 </html>
