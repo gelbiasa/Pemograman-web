@@ -1,0 +1,21 @@
+/* Mengatur style css*/
+/* Gaya umum untuk elemen kotak */
+.kotak {
+    width: 80px;
+    height: 80px;
+}
+
+/* Gaya untuk div dengan id 'divl', latar belakang merah */
+#divl {
+    background-color: red;
+}
+
+/* Gaya untuk div dengan id 'div2', latar belakang hijau */
+#div2 {
+    background-color: green;
+}
+
+/* Gaya untuk div dengan id 'div3', latar belakang biru */
+#div3 {
+    background-color: blue;
+}
