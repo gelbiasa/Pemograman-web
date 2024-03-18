@@ -1,0 +1,32 @@
+/* Praktikum 10 membuat slide show Langkah 3 */
+/* Gaya untuk slider */
+#slider {
+    padding: 10px 0 10px; /* Padding atas dan bawah sebesar 10px, padding kiri dan kanan 0 */
+    position: relative; /* Posisi relatif */
+    width: 300px; /* Lebar 300px */
+    height: 300px; /* Tinggi 300px */
+}
+
+/* Gaya untuk gambar di dalam slider */
+#slider img {
+    width: 300px; /* Lebar 300px */
+    height: 300px; /* Tinggi 300px */
+    position: absolute; /* Posisi absolut */
+    -webkit-border-radius: 5px 5px 5px 5px; /* Sudut melengkung 5px */
+    border-radius: 5px; /* Sudut melengkung 5px */
+    -moz-border-radius: 5px 5px 5px 5px; /* Sudut melengkung 5px */
+}
+
+/* Gaya untuk judul slider */
+.slidertitle {
+    width: 280px; /* Lebar 280px */
+    margin-top: 265px; /* Jarak atas 265px */
+    text-align: center; /* Pusatkan teks */
+    position: absolute; /* Posisi absolut */
+    padding: 10px; /* Padding 10px */
+    -webkit-border-radius: 0px 0px 5px 5px; /* Sudut melengkung 5px pada sudut bawah */
+    border-radius: 0px Opx 5px 5px; /* Sudut melengkung 5px pada sudut bawah */
+    -moz-border-radius: 5px 5px 5px 5px; /* Sudut melengkung 5px pada sudut bawah */
+    color: #FFF; /* Warna teks putih */
+    background-color: rgba (12, 22, 23, 0.50); /* Warna latar belakang dengan opasitas 50% */
+}
