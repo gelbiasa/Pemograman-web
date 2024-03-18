@@ -1,0 +1,10 @@
+/* Gaya untuk elemen dengan kelas 'box' */
+.box {
+    width: 100px; /* Lebar elemen */
+    height: 100px; /* Tinggi elemen */
+    background: #9d7ede; /* Warna latar belakang */
+    margin-top: 30px; /* Jarak atas dari elemen terhadap elemen lain */
+    border-style: solid; /* Gaya border solid */
+    border-color: #6f40ce; /* Warna border */
+    position: relative; /* Posisi elemen relatif terhadap posisi normalnya */
+}
