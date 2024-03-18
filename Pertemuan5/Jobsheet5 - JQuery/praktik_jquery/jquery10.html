@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Mengimpor library jQuery -->
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Menambahkan event listener untuk klik pada tombol dengan ID 'btn1'
+            $("#btn1").click(function () {
+                // Mengatur teks pada elemen dengan ID 'test1' menjadi "<b>Hello World</b>"
+                $("#test1").text("<b>Hello World</b>");
+            });
+
+            // Menambahkan event listener untuk klik pada tombol dengan ID 'btn2'
+            $("#btn2").click(function () {
+                // Mengatur HTML pada elemen dengan ID 'test2' menjadi "<b>Hello World !</b>"
+                $("#test2").html("<b>Hello World !</b>");
+            });
+
+            // Menambahkan event listener untuk klik pada tombol dengan ID 'btn3'
+            $("#btn3").click(function () {
+                // Mengatur nilai input dengan ID 'test3' menjadi "Polinema"
+                $("#test3").val("Polinema");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Elemen paragraf dengan ID 'test1' -->
+    <p id="test1">This is the first paragraph.</p>
+    <!-- Elemen paragraf dengan ID 'test2' -->
+    <p id="test2">This is <b>another</b> paragraph.</p>
+    <!-- Input teks dengan ID 'test3' -->
+    <p>Your Name: <input type="text" id="test3"></p>
+
+    <!-- Tombol untuk mengatur teks -->
+    <button id="btn1">Set Text</button>
+    <!-- Tombol untuk mengatur HTML -->
+    <button id="btn2">Set HTML</button>
+    <!-- Tombol untuk mengatur nilai input -->
+    <button id="btn3">Set Value</button>
+</body>
+
+</html>
