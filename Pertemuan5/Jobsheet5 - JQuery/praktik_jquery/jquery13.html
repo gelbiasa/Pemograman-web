@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Praktikum 10 membuat slide show Langkah 4 -->
+<html>
+
+<head>
+    <!-- Mengimpor stylesheet eksternal -->
+    <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+    <!-- Mengimpor library jQuery -->
+    <script src='jquery-3.7.1.js'></script>
+    <script>
+        // Inisialisasi variabel i
+        var i = 0;
+        
+        // Saat dokumen telah dimuat sepenuhnya
+        $(document).ready(function () {
+            // Sembunyikan judul slider dan gambar sliders
+            $('.slidertitle, #slider img').hide();
+            // Tampilkan gambar berikutnya
+            showNextImage();
+            // Atur interval untuk menampilkan gambar berikutnya setiap 3 detik
+            setInterval('showNextImage () ', 3000);
+        });
+
+        // Fungsi untuk menampilkan gambar berikutnya
+        function showNextImage() {
+            // Increment variabel i
+            i++;
+            // Menambahkan gambar berikutnya ke dalam slider, fadeIn, delay, lalu fadeOut
+            $('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            // Menambahkan judul berikutnya ke dalam slider, fadeIn, delay, lalu fadeOut
+            $('#title' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+            // Jika i mencapai 3, reset i menjadi 0
+            if (i == 3) {
+                i = 0;
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- Kontainer untuk slider -->
+    <div id="slider">
+        <!-- Gambar slider Pertama -->
+        <img id="sliderImage1" src="gambar1.jpg">
+        <!-- Judul slider Pertama -->
+        <div class="slidertitle" id="title1">Gambar1</div>
+        
+        <!-- Gambar slider kedua -->
+        <img id="sliderImage2" src="gambar2.jpg">
+        <!-- Judul slider kedua -->
+        <div class="slidertitle" id="title2">Gambar2</div>
+        
+        <!-- Gambar slider ketiga -->
+        <img id="sliderImage3" src="gambar3.jpg">
+        <!-- Judul slider ketiga -->
+        <div class="slidertitle" id="title3">Gambar3</div>
+    </div>
+</body>
+</html>
