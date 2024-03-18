@@ -1,0 +1,11 @@
+/* Praktikum 9 JQuery Manipulasi CSS Langkah 1 */
+/* Gaya untuk kelas 'important' */
+.important {
+    font-weight: bold; /* Mengatur tebal huruf */
+    font-size: xx-large; /* Mengatur ukuran font besar */
+}
+
+/* Gaya untuk kelas 'blue' */
+.blue {
+    color: blue; /* Mengatur warna teks menjadi biru */
+}
