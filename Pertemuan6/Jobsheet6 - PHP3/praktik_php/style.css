@@ -1,0 +1,19 @@
+/* Praktikum Bagian 3. Multidimensional Array Langkah 1 */
+/* Mendefinisikan bahwa batas antara sel-sel tabel harus digabungkan dan jarak antara sel-sel harus nol */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%; /* Lebar tabel menyesuaikan dengan lebar elemen yang mengandungnya */
+    border: 1px solid #ddd; /* Garis tepi tabel dengan warna abu-abu (#ddd) */
+}
+
+/* Mendefinisikan gaya untuk sel-sel header dan sel-sel data */
+th, td {
+    text-align: left; /* Teks dalam sel-sel ditata rata kiri */
+    padding: 16px; /* Padding untuk sel-sel */
+}
+
+/* Memberi warna latar belakang untuk setiap baris genap dalam tabel */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang abu-abu muda (#f2f2f2) untuk baris genap */
+}
