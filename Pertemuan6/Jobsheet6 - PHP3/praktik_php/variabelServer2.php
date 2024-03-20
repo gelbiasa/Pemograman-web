@@ -1,4 +1,4 @@
-<!-- Variabel $_SERVER -->
+<!-- Variabel $_SERVER PHP_SELF, SERVER_NAME, HTTP_HOST, HTTP_REFERER, HTTP_USER_AGENT, SCRIPT_NAME -->
 <?php
 // Menampilkan alamat file PHP yang sedang dieksekusi oleh server
 echo $_SERVER['PHP_SELF'];
