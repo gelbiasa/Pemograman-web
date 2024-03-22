@@ -13,7 +13,7 @@
     </form> 
     <div id="status"></div> 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="upload.js"></script>
 </body>
 
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Memuat jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- Memuat skrip JavaScript untuk mengelola pengunggahan file -->
     <script src="upload.js"></script>
 </body>
