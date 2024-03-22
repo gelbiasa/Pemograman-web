@@ -1,4 +1,4 @@
-<!-- Praktikum Bagian 3 : Form Input PHP -->
+<!-- Praktikum Bagian 3 : Form Input PHP Langkah 2 -->
 <!DOCTYPE html>
 <html>
 <head>
