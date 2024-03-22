@@ -1,0 +1,61 @@
+/* Praktikum 4. Menghias Upload File Langkah 4 */
+.upload-form-container {
+    max-width: 400px; /* Lebar maksimum */
+    margin: 0 auto; /* Posisi tengah secara horizontal */
+    padding: 20px; /* Ruang padding di sekitar konten */
+    border: 1px solid #ccc; /* Garis tepi */
+    border-radius: 5px; /* Membuat sudut elemen menjadi melengkung */
+    text-align: center; /* Penyusunan teks menjadi tengah */
+}
+
+/* Gaya untuk judul */
+h2 {
+    margin: 0; /* Menghapus margin atas dan bawah */
+    font-size: 24px; /* Ukuran font */
+    color: #333; /* Warna teks */
+}
+
+/* Gaya untuk input file */
+.file-input {
+    display: flex; /* Mengatur tata letak menjadi fleksibel */
+    justify-content: center; /* Menyusun elemen secara horizontal ke tengah */
+    align-items: center; /* Menyusun elemen secara vertikal ke tengah */
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+/* Gaya untuk input file yang sebenarnya */
+.file-input input[type="file"] {
+    display: none; /* Sembunyikan input file yang sebenarnya */
+}
+
+/* Gaya untuk label file */
+.file-label {
+    background: #3498db; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 10px 20px; /* Ruang padding di dalam label */
+    border-radius: 5px; /* Membuat sudut elemen menjadi melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi tanda arah */
+}
+
+/* Gaya untuk tombol unggah */
+.upload-button {
+    background: #2ecc71; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 10px 20px; /* Ruang padding di dalam tombol */
+    border: none; /* Menghapus garis tepi */
+    border-radius: 5px; /* Membuat sudut elemen menjadi melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi tanda arah */
+    opacity: 0.5; /* Opasitas default */
+}
+
+/* Gaya untuk tombol unggah yang dinonaktifkan */
+.upload-button:disabled {
+    background: #ccc; /* Warna latar belakang */
+    cursor: not-allowed; /* Mengubah kursor menjadi tanda tidak diizinkan */
+}
+
+/* Gaya untuk status unggahan */
+.upload-status {
+    margin-top: 20px; /* Margin atas */
+    font-weight: bold; /* Tebal teks */
+}
