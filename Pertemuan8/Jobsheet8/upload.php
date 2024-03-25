@@ -1,8 +1,8 @@
 <?php
-/* Upload gambar Langkah 5
+// Upload gambar Langkah 5
 // Memeriksa apakah formulir telah disubmit
 if (isset($_POST["submit"])) {
-    $targetDirectory = "uploads/"; // Direktori tujuan untuk menyimpan file
+    $targetDirectory = "uploadGambar/"; // Direktori tujuan untuk menyimpan file
     $targetFile = $targetDirectory . basename($_FILES["fileToUpload"]["name"]); // Path lengkap ke file yang akan diunggah
     $fileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION)); // Mendapatkan ekstensi file
 
@@ -24,8 +24,8 @@ if (isset($_POST["submit"])) {
         echo "File tidak valid atau melebihi ukuran maksimum yang diizinkan."; // Pesan error jika file tidak sesuai dengan kriteria yang diizinkan
     }
 }
-*/
 
+/*
 // Upload Document langkah 8
 // Memeriksa apakah formulir telah disubmit
 if (isset($_POST["submit"])) {
@@ -51,4 +51,5 @@ if (isset($_POST["submit"])) {
         echo "Jenis dokumen tidak valid atau melebihi ukuran maksimum yang diizinkan"; // Pesan error jika dokumen tidak sesuai dengan kriteria yang diizinkan
     }
 }
+*/
 ?>
