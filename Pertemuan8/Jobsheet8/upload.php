@@ -28,27 +28,24 @@ if (isset($_POST["submit"])) {
 
 // Upload Document langkah 8
 // Memeriksa apakah formulir telah disubmit
-if (isset($_POST["submit"])) {
-    $targetDirectory = "UploadDocument/"; // Direktori tujuan untuk menyimpan dokumen
-    $targetFile = $targetDirectory . basename($_FILES["documentToUpload"]["name"]); // Path lengkap ke dokumen yang akan diunggah
-    $documentFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION)); // Mendapatkan ekstensi dokumen
+if (isset($_POST['submit'])) { // Memeriksa apakah tombol submit telah ditekan
+    $targetDirectory = "uploadDocument/"; // Direktori tempat file akan disimpan
+    $targetFile = $targetDirectory . basename($_FILES["fileToUpload"]["name"]); // Path lengkap file yang akan diunggah
+    $fileExtension = pathinfo($_FILES["fileToUpload"]["name"], PATHINFO_EXTENSION); // Mendapatkan ekstensi file
+    $fileType = strtolower($fileExtension); // Mengonversi ekstensi file menjadi huruf kecil
+    $allowedExtensions = array("txt", "pdf", "doc", "docx"); // Ekstensi file yang diizinkan untuk diunggah
+    $maxFileSize = 10 * 1024 * 1024; // Ukuran maksimum file dalam byte (10 MB)
 
-    // Ekstensi dokumen yang diizinkan untuk diunggah
-    $allowedExtension = array("txt", "pdf", "doc", "docx");
-
-    // Ukuran maksimum dokumen (dalam byte)
-    $maxFileSize = 10 * 1024* 1024; // 10 MB
-
-    // Memeriksa apakah tipe dokumen dan ukuran dokumen sesuai dengan kriteria yang diizinkan
-    if (in_array($documentFileType, $allowedExtension) && $_FILES["documentToUpload"]["size"] <= $maxFileSize) {
-        // Jika sesuai, pindahkan dokumen ke direktori yang ditentukan
-        if (move_uploaded_file($_FILES["documentToUpload"]["tmp_name"], $targetFile)) {
-            echo "Dokumen berhasil diunggah."; // Pesan sukses jika dokumen berhasil diunggah
+    // Memeriksa apakah jenis file dan ukuran file memenuhi persyaratan
+    if (in_array($fileType, $allowedExtensions) && $_FILES["fileToUpload"]["size"] <= $maxFileSize) {
+        // Memindahkan file yang diunggah ke direktori tujuan
+        if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $targetFile)) {
+            echo "Dokumen berhasil diunggah."; // Pesan sukses jika file berhasil diunggah
         } else {
-            echo "Gagal mengunggah dokumen."; // Pesan error jika gagal mengunggah dokumen
+            echo "Gagal mengunggah dokumen."; // Pesan gagal jika terjadi kesalahan saat memindahkan file
         }
     } else {
-        echo "Jenis dokumen tidak valid atau melebihi ukuran maksimum yang diizinkan"; // Pesan error jika dokumen tidak sesuai dengan kriteria yang diizinkan
+        echo "Jenis dokumen tidak valid atau melebihi ukuran maksimum yang diizinkan."; // Pesan jika jenis atau ukuran file tidak sesuai
     }
 }
 ?>
