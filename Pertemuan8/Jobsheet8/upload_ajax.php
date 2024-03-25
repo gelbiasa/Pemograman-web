@@ -26,7 +26,7 @@ if (isset($_FILES['file'])) {
 
     // Jika tidak ada kesalahan, pindahkan file ke direktori tujuan
     if (empty($errors)) {
-        move_uploaded_file($file_tmp, "documents/" . $file_name); // Memindahkan file ke direktori 'documents'
+        move_uploaded_file($file_tmp, "uploadDocument/" . $file_name); // Memindahkan file ke direktori 'uploadDocuments'
         echo "File berhasil diunggah.";
     } else {
         echo implode(" ", $errors); // Menampilkan pesan kesalahan jika ada
