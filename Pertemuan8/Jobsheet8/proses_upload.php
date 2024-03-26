@@ -1,6 +1,6 @@
 <!-- Praktikum 2. Multi Upload File proses_upload -->
 <?php
-$targetDirectory =  "uploadDocument/"; // Direktori tujuan untuk menyimpan file
+$targetDirectory =  "uploadDocument/"; // Direktori tujuan untuk menyimpan file ke folder uploadDocument
 
 // Membuat direktori jika tidak ada
 if (!file_exists($targetDirectory)){
