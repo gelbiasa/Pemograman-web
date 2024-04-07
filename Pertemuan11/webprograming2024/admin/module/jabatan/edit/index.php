@@ -1,4 +1,4 @@
-<!-- Praktikum 4. Folder Module – Bagian Jabatan Langkah 8 hapus.php -->
+<!-- Praktikum 4. Folder Module – Bagian Jabatan Langkah 8 index.php -->
 <div class="container-fluid">
     <div class="row">
         <?php
