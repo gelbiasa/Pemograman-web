@@ -62,4 +62,3 @@ $cat->meow(); // Menampilkan pesan bahwa kucing sedang mengeluarkan suara meong
 // Memanggil metode bark() dari objek anjing
 $dog->bark(); // Menampilkan pesan bahwa anjing sedang mengeluarkan suara woof
 ?>
-
