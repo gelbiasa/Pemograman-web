@@ -1,4 +1,4 @@
-<!-- Praktikum 1. Struktur Folder dan File Paling Atas Langkah 4 login.php -->
+<!-- Praktikum 1. Struktur Folder dan File Paling Atas Langkah 4 login -->
 <?php
 // Memulai sesi, menampilkan halaman login dengan formulir untuk masuk
 if (session_status() == PHP_SESSION_NONE)
