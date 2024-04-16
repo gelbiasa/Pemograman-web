@@ -17,9 +17,9 @@ include 'fungsi/pesan_kilat.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Nurhidayah">
+    <meta name="author" content="Gelby">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Aplikasi Kantor Nurhidayah</title>
+    <title>Aplikasi Kantor Gelby</title>
 
     <!-- Link canonical -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
