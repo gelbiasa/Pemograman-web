@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" action="form.php" method="POST">
+            <div class="input-group">
+                <img src="gambar/logobola.png" alt="Logo" class="logo">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

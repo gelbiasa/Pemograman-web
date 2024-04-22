@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7cdfda;
+}
+
+/* CSS untuk infdex.html*/
+.login-container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 5px solid #080808;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #074757;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: 'Algerian', sans-serif;
+    text-align: center;
+    color: #000000;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* CSS untuk infdex.html bagian usename dan password*/
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid #040404;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* CSS untuk tombol login*/
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #7cdfda;
+    color: #030303;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3f0ade;
+}
+
+/* CSS untuk Logo*/
+.logo {
+    width: 350px;
+    height: 550px;
+    margin-bottom: -20px;
+    
+}
+
+/* Tampilan gaya untuk tampilan home */
+.home-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+/* Tampilan gaya untuk tombol menu pada tampilan home */
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.menu a {
+    background-color: #074757;
+    color: #fff;
+    padding: 30px 0; /* Padding vertikal tetap, padding horizontal diatur nanti */
+    border-radius: 15px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 600px; /* Lebar tombol diatur sama */
+    text-align: center; /* Teks di tengah tombol */
+}
+
+.menu a:hover {
+    background-color: #2a89bc;
+}
+
+.menu a:focus {
+    outline: none;
+}
+
+/* Tampilan pada tombol logout */
+.logout-form button[type="submit"] {
+    background-color: #b11215; /* Warna latar belakang tombol logout */
+    color: #141313; /* Warna teks tombol logout */
+}
+
+.logout-form button[type="submit"]:hover {
+    background-color: #e97575; /* Warna latar belakang tombol logout saat dihover */
+}
+
+.logout-form {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Tampilan untuk tombol kembali */
+.btn-back {
+    display: inline-block;
+    background-color: #074757;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #2a89bc;
+}
+
+.btn-back:focus {
+    outline: none;
+}
+
+/* Gaya tambahan untuk informasi pertandingan */
+.match {
+    background-color: #f0f0f0; /* Warna latar belakang kotak jadwal pertandingan */
+    border-radius: 10px; /* Agar kotak terlihat lebih bulat */
+    padding: 20px; /* Ruang di dalam kotak */
+    margin-bottom: 20px; /* Jarak antara setiap kotak jadwal */
+    text-align: center; /* Teks berada di tengah kotak */
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Menyamakan tinggi elemen */
+}
+
+.match .team-logo {
+    flex: 7; /* Bagian logo memperoleh ruang yang sama dengan detail pertandingan */
+    text-align: center; /* Teks berada di tengah */
+}
+
+.match .team-logo img {
+    width: 150px; /* Ukuran logo tim */
+    height: 150px;
+}
+
+.match .match-details {
+    flex: 3; /* Bagian detail pertandingan memperoleh ruang yang lebih besar */
+}
+
+.match p {
+    margin: 5px 0; /* Jarak antara baris */
+}
+
+/* Gaya tampilan pada menu Pesan Pertandingan */
+.pesan-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tampilan ketika sudah mengklik pesanan pada menu pesan pertandingan dan tampilan ketika pada
+riwayat pertandingan belum ada pesanan sama sekali */
+.pesanan {
+    background-color: #549bbc;
+    color: #fff;
+    border: none;
+    padding: 50px; /* Mengatur padding */
+    width: 500px;
+    text-align: center; /* Teks di tengah */
+    margin: 0 auto; /* Untuk membuatnya terpusat */
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/* Gaya tambahan untuk tabel riwayat pesanan */
+.riwayat-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Gaya tambahan untuk menu Riwayat Pesanan */
+.riwayat-container th,
+.riwayat-container td {
+    border: 4px solid #030303;
+    padding: 8px;
+    text-align: left;
+}
+
+/*Tampilan untuk tabel pengaturan pada kolom*/
+.riwayat-container th {
+    background-color: #074757;
+    color: white; /*Warna tulisan pada kolom*/
+    text-align: center;
+}
+
+/*Tampilan untuk tabel pengaturan pada barris*/
+.riwayat-container tr {
+    background-color: #f2f2f2;
+}
+
+.riwayat-container tr:hover {
+    background-color: #6fec66;
+}
+
+/*Tampilan tombol batalkan pada menu Riwayat Pesanan*/
+.cancel-button {
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
