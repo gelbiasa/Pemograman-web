@@ -1,0 +1,219 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7fe;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container1 {
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #133ac4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.container1 .logo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.login-formTA {
+    display: flex;
+    gap: 10px;
+}
+
+.login-formTA button {
+    height: 40px;
+    width: 100px;
+    background-color: #ffffff;
+    color: #1a37da;
+    font-size: large;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-formTA button:hover {
+    background-color: #2fcae9;
+}
+
+.container2 {
+    height: 10px;
+    background-color: #f9fd0b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+}
+
+.htmlTA {
+    height: 100%;
+}
+
+.contentTA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.textTA {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.textTA h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.textTA p {
+    font-size: 16px;
+}
+
+.imageTA {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.footerTA {
+    margin-top: 18%;
+}
+
+.container2TA {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #1a37da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 999;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .textTA h2 {
+        font-size: 28px;
+    }
+
+    .textTA p {
+        font-size: 14px;
+    }
+
+    .login-formTA button {
+        height: 35px;
+        width: 90px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 992px) {
+    .container1 h1 {
+        font-size: 20px;
+    }
+
+    .login-formTA button {
+        height: 30px;
+        width: 80px;
+        font-size: small;
+    }
+
+    .textTA {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .contentTA {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageTA {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .login-formTA {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .textTA h2 {
+        font-size: 24px;
+    }
+
+    .textTA p {
+        font-size: 12px;
+    }
+
+    .imageTA {
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container1 .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .container1 h1 {
+        font-size: 18px;
+    }
+
+    .textTA h2 {
+        font-size: 20px;
+    }
+
+    .textTA p {
+        font-size: 10px;
+    }
+
+    .imageTA {
+        margin-top: 5px;
+    }
+
+    .footerTA {
+        margin-top: 10%;
+    }
+
+    .container2TA h3 {
+        font-size: 14px;
+    }
+}

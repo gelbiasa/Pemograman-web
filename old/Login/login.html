@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Tambahan meta tag dan title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Politeknik Negeri Malang</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Menggunakan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Script JavaScript -->
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Container untuk logo dan judul -->
+        <div class="container1">
+            <img src="../gambar/polinema.png" alt="Logo Politeknik Negeri Malang" class="logo">
+            <h1>POLITEKNIK NEGERI MALANG</h1>
+        </div>
+        <!-- Container untuk garis separator -->
+        <div class="container2"></div>
+    </header>
+    <!-- Container utama -->
+    <div class="container">
+        <button class="btn-back_login" onclick="window.location.href='../index.html'">Back</button>
+        <div class="pengaturJarak">
+            <!-- Container untuk form login -->
+            <div class="flex-container">
+                <!-- Container kiri -->
+                <div class="containerKiri">
+                    <section class="login-form">
+                        <h2>Login Sebagai</h2>
+                        <div class="radio-group">
+                            <button id="mahasiswa" class="buttonUser" name="role" value="mahasiswa">Mahasiswa</button>
+                            <button id="dosen" class="buttonUser" name="role" value="dosen">Dosen</button>
+                            <button id="orang tua" class="buttonUser" name="role" value="orang tua">Orang Tua</button>
+                        </div>
+                        <div class="radio-group">
+                            <button id="admin" class="buttonUser" name="role" value="admin">Admin</button>
+                            <button id="alumni" class="buttonUser" name="role" value="alumni">Alumni</button>
+                            <button id="industri" class="buttonUser" name="role" value="industri">Industri</button>
+                        </div>
+                        <div class="radio-group">
+                            <button id="tenaga pendidik" class="buttonUser" name="role" value="tenaga pendidik">Tenaga Pendidik</button>
+                        </div>
+                    </section>
+                </div>
+                <!-- Container kanan -->
+                <div class="containerKanan">
+                    <div class="tataLetak">
+                       <!-- Tambahkan overlay -->
+                       <div id="overlay" class="overlay"></div>
+                       <!-- Container untuk menampilkan pesan kesalahan dalam bentuk overlay -->
+                       <div id="error-overlay" class="error-message">
+                           <!-- Tambahkan elemen untuk menampilkan pesan kesalahan -->
+                           <h2>Error</h2>
+                           <p id="error-text"></p>
+                           <!-- Tombol untuk menutup overlay -->
+                           <span id="close-overlay" class="close-overlay">&times;</span>
+                       </div>
+                        <!-- Form login -->
+                        <form id="loginForm">
+                            <!-- Tambahkan div untuk menampilkan pesan kesalahan -->
+                            <div id="error-message" class="error-message"></div>
+                            <div class="input-group">
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Password:</label>
+                                <div class="password-wrapper">
+                                    <input type="password" id="password" name="password" required>
+                                    <!-- Ikon mata untuk toggle visibility -->
+                                    <span class="password-toggle" id="togglePassword">
+                                        <i class="fas fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                                <!-- Tambahkan lupa password di sini -->
+                                <a href="#" class="lupa-password">Lupa password?</a>
+                            </div>
+                            <div class="tombolLogin">
+                                <!-- Tombol login, perubahan tipe menjadi "submit" -->
+                                <button class="login-button" type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

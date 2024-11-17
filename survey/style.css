@@ -1,0 +1,1981 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7fe;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container1 {
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #133ac4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* Menjadikan container1 sebagai flex container */
+    align-items: center;
+    /* Mengatur posisi vertikal ke tengah */
+    color: white;
+}
+
+.container1 .logo {
+    height: 80px;
+    width: 80px;
+    /* Atur ukuran logo sesuai kebutuhan */
+    margin-right: 20px;
+    /* Berikan sedikit margin antara logo dan teks */
+    margin-left: 40px;
+}
+
+.h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: left;
+    /* Menjadikan teks berada di sisi kiri */
+}
+
+.container2 {
+    height: 10px;
+    background-color: #f9fd0b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+}
+
+.container {
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: #EFF9FF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pengaturJarak {
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerKiri {
+    width: 47%;
+    height: 580px;
+    padding: 20px;
+    background-color: #EFF9FF;
+    border-radius: 10px;
+}
+
+.containerKiri h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.login-form {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.login-form h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.radio-group {
+    margin-top: 70px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonUser {
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 70px;
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #181e8a;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.buttonUser:hover {
+    background-color: #e0e0e0;
+}
+
+.containerKanan {
+    width: 47%;
+    height: 580px;
+    padding: 20px;
+    background-color: #EFF9FF;
+    border-radius: 10px;
+}
+
+.tataLetak {
+    margin-top: 170px;
+}
+
+.input-group {
+    margin-top: 65px;
+    margin-left: auto;
+    /* Atur margin kiri otomatis */
+    margin-right: auto;
+    /* Atur margin kanan otomatis */
+    width: 80%;
+    /* Atur lebar sesuai kebutuhan */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    /* Atur lebar input penuh */
+    height: 20px;
+    padding: 10px;
+    border: 2px solid #133ac4;
+    border-radius: 5px;
+}
+
+/* Menampilkan ikon mata pada input password */
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Mengatur gaya ikon mata */
+.password-toggle i {
+    color: #646669;
+    /* Warna ikon */
+    font-size: 18px;
+    /* Ukuran ikon */
+}
+
+/* Mengatur gaya ikon mata saat hover */
+.password-toggle:hover i {
+    color: #000;
+    /* Warna ikon saat hover */
+}
+
+.btn-back_login {
+    margin-left: 3%;
+    position: absolute;
+    left: 10px;
+    background-color: #EFF9FF;
+    color: #133ac4;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 3px solid #133ac4;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-back_login:hover {
+    background-color: #3dc7d9;
+}
+
+.tombolLogin {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Mengatur agar elemen berada di tengah secara horizontal */
+    justify-content: center;
+}
+
+.login-button {
+    background-color: #131ff4;
+    color: #fff;
+    padding: 15px 0px;
+    /* Tambahkan padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    /* Sesuaikan ukuran teks */
+    width: 200px;
+    /* Sesuaikan lebar */
+    height: 50px;
+    /* Sesuaikan tinggi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.login-button:hover {
+    background-color: #3dc7d9;
+}
+
+.lupa-password {
+    display: block;
+    /* Membuat hyperlink menjadi elemen blok */
+    margin-top: 10px;
+    /* Berikan sedikit margin atas dari hyperlink */
+    text-align: left;
+    /* Posisikan teks ke kanan */
+    color: #646669;
+    /* Warna teks */
+    text-decoration: none;
+    /* Hilangkan garis bawah default */
+}
+
+.lupa-password:hover {
+    text-decoration: underline;
+    /* Tambahkan garis bawah saat digulir */
+}
+
+/* =================================================== USER PAGE ==================================================== */
+
+.sub-title {
+    font-size: 20px; /* Sesuaikan ukuran font */
+    margin: 0; /* Hapus margin atas dan bawah */
+    text-align: left;
+    margin-top: -20px;
+}
+
+.title-container {
+    text-align: center; /* Sesuaikan posisi judul */
+    margin-bottom: 15px;
+}
+
+.container2UP {
+    height: 10px;
+    background-color: #f9fd0b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.containerMain {
+    display: flex; /* Membuat konten menjadi flex container */
+}
+
+.containerUser {
+    width: 20%;
+    height: 820px;
+    padding: 20px;
+    background-color: #B0D1E9;
+    align-items: left;
+    margin-top: -40px;
+}
+
+.containerKananUP {
+    width: 80%;
+    height: 810px;
+    padding: 20px;
+    background-image: url('gambar/polinemaUP.png');
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    align-items: left;
+    margin-top: -30px;
+}
+
+.containerKananUP p {
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.atas {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 34px;
+    color: white;
+    text-shadow: 0 0 30px black; /* Menambahkan bayangan dengan lebar 5px */
+}
+
+.bawah {
+    margin-top: 75px;
+    text-align: left;
+    font-size: 30px;
+}
+
+.avatar {
+    width: 50px; /* Sesuaikan dengan ukuran gambar yang diinginkan */
+    height: 50px; /* Sesuaikan dengan ukuran gambar yang diinginkan */
+    border-radius: 50%; /* Untuk membuat gambar menjadi lingkaran */
+    margin-right: 20px; /* Agar ada jarak antara gambar dan teks */
+    float: left; /* Menjadikan gambar berada di sebelah kiri teks */
+}
+
+.user-name {
+    margin-bottom: 8px; /* Atur jarak bawah antara nama dan label */
+}
+
+.user-role {
+    margin-top: 8px; /* Hilangkan margin atas pada label */
+}
+
+/* CSS yang sudah ada */
+
+.logo::after,
+.user-role::after {
+    content: '';
+    display: block;
+    width: 435px; /* Atur lebar garis 100% */
+    height: 2px; /* Ketebalan garis */
+    background-color: black; /* Warna garis */
+    margin-top: 35px; /* Jarak antara teks dan garis */
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Menjadikan flex container vertikal */
+    justify-content: center; /* Menyusun tombol di tengah vertikal */
+    align-items: center; /* Menyusun tombol di tengah horizontal */
+}
+
+.buttons button {
+    margin: 15px; /* Jarak antara tombol */
+}
+
+/* Tombol dengan kelas "big" */
+.big {
+    display: flex;
+    align-items: center;
+    /* Mengatur konten berada di tengah vertikal */
+    width: 80%;
+    padding: 10px;
+    background-color: #f7f7fe;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #000;
+    font-size: 20px;
+}
+
+.big:hover {
+    background-color: #470cf9;
+}
+
+.jarakLogout {
+    margin-top: 200px;
+}
+.logout {
+    width: 300px; /* Lebar tombol */
+    height: 50px; /* Tinggi tombol */
+    font-size: 18px; /* Ukuran font */
+    background-color: red;
+}
+
+.icon {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* =================================================== Tampilan Awal ==================================================== */
+
+.htmlTA {
+    height: 100%;
+}
+
+.headerTA {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Menentukan urutan tumpukan, pastikan lebih tinggi dari elemen lain */
+}
+
+.h1TA {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logoTA {
+    margin-right: 20px;
+    width: 80px;
+    height: auto;
+}
+
+.login-formTA button {
+    margin-right: -970px;
+    margin-left: 1000px;
+    height: 50px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #1a37da;
+    font-size: large;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-formTA button:hover {
+    background-color: #2fcae9;
+}
+
+.contentTA {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin-top: -80px;
+    padding: 20px;
+}
+
+.textTA {
+    width: 45%;
+    margin-left: 40px;
+    margin-top: -250px;
+}
+
+.textTA h2 {
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+.textTA p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.imageTA {
+    height: 930px;
+    width: 45%;
+    margin-left: 20px;
+    margin-right: -20px;
+    margin-top: -10px;
+}
+
+.footerTA {
+    margin-top: 18%;
+}
+
+.container2TA {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #1a37da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 999; /* Menentukan tingkat kedalaman tumpukan */
+}
+
+.setuju-formTA button {
+    margin-right: 50px;
+    background-color: #1a37da;
+    color: white;
+    font-size: large;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.setuju-formTA button:hover {
+    background-color: #e9e775;
+    color: black;
+}
+
+/* =================================================== Register ==================================================== */
+.backgroundRegister {
+    font-family: Arial, sans-serif;
+    background-image: url('gambar/polinemaUP.png');
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+}
+
+/* CSS untuk infdex.html*/
+.Register-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #080808;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #15e9e9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2R {
+    margin-bottom: 20px;
+    font-family: 'Algerian', sans-serif;
+    text-align: center;
+    color: #000000;
+}
+
+.logoR {
+    width: 250px;
+    height: 250px;
+    margin-bottom: -10px;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Menambahkan sedikit jarak antara setiap form-group */
+}
+
+/* Mengatur lebar kotak input dan label */
+.form-group input,
+.form-group select {
+    width: 100%; /* Mengatur lebar menjadi 100% dari parentnya */
+    box-sizing: border-box; /* Untuk mempertahankan lebar total */
+}
+
+.form-group label {
+    display: block; /* Mengatur agar label berada di atas input */
+    text-align: left; /* Mengatur agar teks label rata kiri */
+    margin-bottom: 5px; /* Menambahkan sedikit jarak antara label dan input */
+    color: #ffffff; /* Mengubah warna teks label */
+}
+
+#register input,
+#register select {
+    height: 30px; /* Mengatur tinggi input */
+    border-radius: 5px; /* Memberikan sudut pada input */
+    border: 1px solid #ccc; /* Mengatur garis pinggiran input */
+    padding: 5px; /* Memberikan ruang dalam di sekeliling teks input */
+    width: 100%; /* Mengatur lebar menjadi 100% dari parentnya */
+    box-sizing: border-box; /* Untuk mempertahankan lebar total */
+}
+
+#register label {
+    display: block; /* Mengatur agar label berada di atas input */
+    text-align: left; /* Mengatur agar teks label rata kiri */
+    margin-bottom: 5px; /* Menambahkan sedikit jarak antara label dan input */
+    color: #ffffff; /* Mengubah warna teks label */
+}
+
+/* =================================================== Profil Page ==================================================== */
+
+.containerPP {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #3e09ea;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* tambahkan ini */
+}
+
+.containerMainPP {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerKananPP {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    align-items: left;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 83vh; /* Atur tinggi maksimum agar container tidak lebih tinggi dari viewport */
+    overflow-y: scroll; /* Izinkan scroll saat konten melebihi tinggi container */
+}
+
+.test{   
+    display: flex;
+}
+
+.input-groupPP {
+    margin-top: 10px;
+    margin-left: auto;
+    /* Atur margin kiri otomatis */
+    margin-right: auto;
+    /* Atur margin kanan otomatis */
+    width: 80%;
+    /* Atur lebar sesuai kebutuhan */
+}
+
+.input-groupPP label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.input-groupPP input {
+    width: 100%;
+    /* Atur lebar input penuh */
+    height: 20px;
+    padding: 10px;
+    border: 2px solid #133ac4;
+    border-radius: 5px;
+}
+
+.logoPP {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.simpan button {
+    margin-left: 525px;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    font-size: large;
+    padding: 10px 15px;
+    border: 2px solid #133ac4;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(25, 57, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simpan button:hover {
+    background-color: #2fcae9;
+}
+
+.simpan img {
+    margin-left: -10px;
+    width: 50px;
+    height: 50px;
+}
+
+.ubahPassword button {
+    margin-right: 525px;
+    height: auto;
+    width: auto;
+    background-color: white;
+    font-size: small;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ubahPassword button:hover {
+    background-color: #2fcae9;
+}
+
+.simpanPassword button {
+    margin-left: 250px;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    font-size: large;
+    padding: 10px 15px;
+    border: 2px solid #133ac4;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(25, 57, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.simpanPassword img {
+    margin-left: -10px;
+    width: 50px;
+    height: 50px;
+}
+
+.simpanPassword button:hover {
+    background-color: #2fcae9;
+}
+
+.backUP {
+    margin-right: 400px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.backUP:hover {
+    background-color: #133ac4;
+}
+
+.jarakUP {
+    margin-top: 20px;
+}
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: -20px;
+}
+
+.input-container input {
+    flex: 1;
+    padding-right: 40px; /* Beri ruang untuk ikon */
+}
+
+.edit-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/* Tambahkan di style.css atau di dalam tag <style> di file HTML */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Tambahkan CSS untuk overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+.overlay-content h2 {
+    margin-top: 0;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* ================================================= Overlay ======================================================== */
+
+.overlay {
+    position: fixed; /* Tampilkan overlay di atas konten */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam transparan */
+    display: none; /* Sembunyikan secara default */
+    z-index: 999; /* Atur urutan tampilan di atas konten lain */
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFCEC;
+    border-radius: 8px;
+    border: 4px solid #BFA935;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    max-width: 80%;
+    text-align: left;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Style untuk container pesan kesalahan dalam bentuk overlay */
+.error-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFEFEF;
+    border-radius: 8px;
+    border: 4px solid #AD1919;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Menempatkan di atas overlay */
+    display: none; /* Sembunyikan secara default */
+    max-width: 80%; /* Lebar maksimum */
+    text-align: center; /* Pusatkan teks */
+}
+
+/*========================================= Survey Mahasiswa ==========================================*/
+.containerKanan_SP {
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    margin-top: -30px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerKanan_SP2 {
+    max-height: 77vh; /* Atur tinggi maksimum agar container tidak lebih tinggi dari viewport */
+    overflow-y: scroll; /* Izinkan scroll saat konten melebihi tinggi container */
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    margin-top: -30px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blok_SP1 {
+    margin-bottom: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.blok_SP_FM {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_SM {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_DM {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_PK {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_FT {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_ST {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_PO {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_SDMI {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_DPI {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_FD {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_SD {
+    background-color: #B0D1E9;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HFM {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HSM {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HDM {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HFD {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HSD {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HFT {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HST {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HPO {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HSDMI {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HDPI {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HPK {
+    background-color: #E57373;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.blok_SP_HFM.completed,
+.blok_SP_HSM.completed,
+.blok_SP_HDM.completed,
+.blok_SP_HFD.completed,
+.blok_SP_HSD.completed,
+.blok_SP_HFT.completed,
+.blok_SP_HST.completed,
+.blok_SP_HPO.completed,
+.blok_SP_HSDMI.completed,
+.blok_SP_HDPI.completed,
+.blok_SP_HPK.completed {
+    background-color: rgb(102, 217, 113);
+}
+
+.blok_SP_FM.completed,
+.blok_SP_SM.completed,
+.blok_SP_DM.completed,
+.blok_SP_FD.completed,
+.blok_SP_SD.completed,
+.blok_SP_FT.completed,
+.blok_SP_ST.completed,
+.blok_SP_PO.completed,
+.blok_SP_SDMI.completed,
+.blok_SP_DPI.completed,
+.blok_SP_PK.completed {
+    background-color: #E57373; /* Warna merah */
+}
+
+
+.content_SP {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.icon_survey_SP {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.text_SP {
+    margin-left: 15px; /* Beri jarak antara ikon dan teks */
+    margin-bottom: -10px;
+}
+
+.icon_arrow_SP {
+    margin-top: 15px;
+    margin-left: 400px;
+    width: 30px;
+    height: 30px;
+}
+
+.blok-strip_SP {
+    width: 470px;
+    height: 7px;
+    background-color: #41248b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.not-completed {
+    background-color: red;
+}
+/*========================================= Koneksi ==========================================*/
+.success-messageK, .error-messageK {
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px; /* Sesuaikan dengan lebar maksimum yang diinginkan */
+}
+
+.success-messageK .h2K, .error-messageK .h2K {
+    color: #4CAF50;
+}
+
+.spasiK {
+    margin-bottom: 50px;
+}
+
+.success-messageK .buttonK, .error-messageK .buttonK {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.success-messageK .buttonK:hover, .error-messageK .buttonK:hover {
+    background-color: #a2eb8e;
+}
+
+/*======================================= Soal Survey ==============================================*
+/* Style untuk container survey */
+.container_survey {
+    width: 100%;
+    max-height: 87vh; /* Atur tinggi maksimum agar container tidak lebih tinggi dari viewport */
+    overflow-y: scroll; /* Izinkan scroll saat konten melebihi tinggi container */
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: -30px;
+    padding-right: 20px; /* Hindari tumpang tindih dengan sidebar */
+}
+
+/* Style untuk tombol back */
+.btn-back_survey {
+    margin-left: 3%;
+    margin-top: 1%;
+    position: absolute;
+    left: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-back_survey:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk container nama survey */
+.survey-nama {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4.5%;
+    margin-bottom: 15px;
+    padding: 20px; /* Menambahkan padding */
+    border: 1px solid #ccc; /* Menambahkan border */
+    border-radius: 10px; /* Menambahkan border-radius */
+    background-color: #f9f9f9; /* Memberikan latar belakang */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style untuk container soal */
+.container_soal {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 4%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative; /* Menjadikan container sebagai konteks posisi */
+}
+
+/* Style untuk form label */
+.form-label_survey {
+    font-weight: bold;
+    font-size: 18px; /* Ukuran teks diperbesar */
+}
+
+/* Style untuk radio button */
+.form-check-input_survey {
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+/* Style untuk textarea */
+.form-control_survey {
+    resize: vertical; /* Memastikan textarea dapat diresize secara vertikal */
+}
+
+/* Style untuk tombol submit */
+.btn-primary_survey {
+    background-color: #EEEEFF;
+    color: #151280;
+    position: absolute;
+    margin-right: 1%;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px; /* Ukuran teks tombol diperbesar */
+    padding: 12px 40px; /* Padding tombol diperbesar */
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Efek saat tombol disorot */
+.btn-primary_survey:hover {
+    background-color: #0056b3; /* Ubah warna latar belakang saat tombol disorot */
+}
+
+/* Style untuk membuat pilihan jawaban sejajar dua-dua */
+.answer-options_survey {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.answer-options_survey .form-check_survey {
+    flex-basis: 50%; /* Setiap pilihan jawaban akan memiliki lebar 50% */
+}
+
+.jarakSS {
+    margin-top: 20px;
+}
+
+.jarakBawahSS {
+    margin-bottom: 20px;
+}
+
+/* Style untuk textarea */
+.form-control_survey {
+    resize: vertical; /* Memastikan textarea dapat diresize secara vertikal */
+    width: 100%; /* Lebarkan textarea agar mengisi seluruh lebar container */
+    height: 150px; /* Tambahkan tinggi agar textarea lebih panjang */
+}
+
+/* =================================================== HASIL SURVEY ADMIN PAGE ==================================================== */
+/* CSS untuk container hasil survey */
+.container_hasil_survey {
+    margin-top: -30px;
+    width: 80%;
+    height: auto;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 83vh; /* Atur tinggi maksimum agar container tidak lebih tinggi dari viewport */
+    overflow-y: scroll; /* Izinkan scroll saat konten melebihi tinggi container */
+}
+
+/* Style untuk tombol back */
+.btn-back_hSurvey {
+    margin-top: 20px;
+    margin-left: 4%;
+    position: absolute;
+    left: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-back_hSurvey:hover {
+    background-color: #0056b3;
+}
+
+.container_hSurvey {
+    width: 92%;
+    height: auto;
+    margin: 0 auto;
+    top: 10%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative; /* Menjadikan container sebagai konteks posisi */
+}
+
+/* CSS untuk tabel */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table thead {
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 2px solid #000;
+}
+
+/* CSS untuk header kolom */
+.table th {
+    top: 8px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    background: #e6e6e6; /* Default background color for all cells */
+    padding: 10px;
+}
+
+/* CSS untuk sel dalam tabel */
+.table td {
+    top: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #e6e6e6; /* Default background color for all cells */
+    padding: 10px;
+}
+
+/* CSS untuk baris ganjil dalam tabel */
+.table tbody tr:nth-child(odd) td, 
+.table tbody tr:nth-child(odd) th {
+    background: #C2C2C2; /* Warna untuk baris ganjil */
+}
+
+/* CSS untuk tombol View */
+.btn-view {
+    background-color: #EEEEFF;
+    color: #151280;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-view:hover {
+    background-color: #0056b3;
+}
+
+/* =================================================== ALL USER PAGE ADMIN ==================================================== */
+.containerKanan_AU {
+    margin-top: -30px;
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; /* Tambahkan properti position relative */
+}
+
+.btn-back_AU {
+    margin-top: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute; /* Tambahkan properti position absolute */
+    top: 0; /* Atur posisi tombol di bagian atas */
+    left: 5%;
+}
+
+.btn-back_AU:hover {
+    background-color: #0056b3;
+}
+
+.blok_AU1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.blok_AU {
+    background-color: #EFF9FF;
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;/* Pusatkan konten secara vertikal */
+}
+
+.content_AU {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.text_AU {
+    margin-left: 15px; /* Beri jarak antara ikon dan teks */
+    font-size: 17px;
+}
+
+.blok-strip_AU {
+    width: 350px;
+    height: 7px;
+    background-color: #41248b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CSS untuk tabel */
+.table_AU {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-top: 5px solid #000;
+}
+
+.table_AU thead {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* CSS untuk header kolom */
+.table_AU th {
+    top: 8px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    background: #C2C2C2; /* Default background color for all cells */
+    padding: 10px;
+}
+
+/* CSS untuk sel dalam tabel */
+.table_AU td {
+    top: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background: #C2C2C2; /* Default background color for all cells */
+    padding: 10px;
+}
+
+/* CSS untuk baris ganjil dalam tabel */
+.table_AU tbody tr:nth-child(odd) td, 
+.table_AU tbody tr:nth-child(odd) th {
+    background: #e6e6e6; /* Warna untuk baris ganjil */
+}
+
+/* =================================================== MEMBUAT SURVEY PAGE ADMIN ==================================================== */
+.containerKanan_SS {
+    margin-top: -30px;
+    width: 80%;
+    height: auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; /* Tambahkan properti position relative */
+    max-height: 83vh; /* Atur tinggi maksimum agar container tidak lebih tinggi dari viewport */
+    overflow-y: scroll; /* Izinkan scroll saat konten melebihi tinggi container */
+}
+
+.btn-back_SS {
+    margin-top: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute; /* Tambahkan properti position absolute */
+    top: 0; /* Atur posisi tombol di bagian atas */
+    left: 5%;
+}
+
+.btn-back_SS:hover {
+    background-color: #0056b3;
+}
+
+.blok_SS1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.blok_SS {
+    background-color: #EFF9FF;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Pusatkan konten secara vertikal */
+    position: relative; /* Tambahkan properti position relative */
+}
+
+.content_SS {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon_survey_SS {
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+
+.text_SS {
+    margin-top: 10px;
+    margin-left: 15px; /* Beri jarak antara ikon dan teks */
+}
+
+.blok-strip_SS {
+    width: 600px;
+    height: 7px;
+    background-color: #41248b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol Plus */
+.btn-plus_SS {
+    position: absolute; /* Tambahkan properti position absolute */
+    bottom: 10px; /* Geser ke bagian bawah */
+    right: 10px; /* Geser ke bagian kanan */
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 24px; /* Atur ukuran font */
+    font-weight: bold;
+    padding: 1px 10px; /* Atur padding tombol */
+    border: 1px solid #151280;
+    border-radius: 10%; /* Agar bentuknya bulat */
+    cursor: pointer;
+}
+
+.btn-plus_SS:hover {
+    background-color: #0056b3;
+    color: #FFFFFF;
+}
+
+/* Style untuk container form */
+.container_form_SS {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style untuk label */
+label {
+    font-weight: bold;
+}
+
+/* Style untuk input dan textarea */
+.surveyInput input[type="text"],
+.surveyInput input[type="number"],
+.surveyInput textarea,
+.surveyInput select {
+    width: 98%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style untuk tombol next */
+#nextSF {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSF:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol submit */
+#submitSSF {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submitSSF:hover {
+    background-color: #0056b3;
+}
+
+.accSoal {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.accSoal p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#backSSFk {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#backSSFk:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol next */
+#nextSSI {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSSI:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol submit */
+#submitSSSI {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submitSSSI:hover {
+    background-color: #0056b3;
+}
+
+#backSSSIk {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#backSSSIk:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol next */
+#nextSD {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSD:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol submit */
+#submitSSD {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submitSSD:hover {
+    background-color: #0056b3;
+}
+
+#backSSDk {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#backSSDk:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol next */
+#nextSFdsn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSFdsn:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol next */
+#nextSSIdsn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSSIdsn:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol next */
+#nextSFtndk {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSFtndk:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol next */
+#nextSSItndk {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSSItndk:hover {
+    background-color: #0056b3;
+}
+
+
+/* Style untuk tombol next */
+#nextSPKalmn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#nextSPKalmn:hover {
+    background-color: #0056b3;
+}
+
+/* Style untuk tombol submit */
+#submitSSPK {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#submitSSPK:hover {
+    background-color: #0056b3;
+}
+
+#backSSPKk {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #EEEEFF;
+    color: #151280;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #151280;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#backSSPKk:hover {
+    background-color: #0056b3;
+}
